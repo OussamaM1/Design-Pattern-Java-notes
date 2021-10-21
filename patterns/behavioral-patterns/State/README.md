@@ -27,3 +27,35 @@ We use the State pattern in either of the following cases:
 ## Example
 
 Let's take an example of text editor, it lets you change the state of text that is typed i.e. if you have selected bold, it starts writing in bold, if italic then in italics etc.
+
+<p align="center">
+  <img src="../../images/state-example.png" width="700" />
+</p>
+
+```Java
+  public static void main(String []args) {
+
+    //Create the instance with the Default state
+    TextEditor editor = new TextEditor(new Default());
+    System.out.println(editor.request("First Line!"));
+
+    //Change the state to the UpperCase state
+    editor.setState(new UpperCase());
+    System.out.println(editor.request("Second line!"));
+
+    //Change the state to the LowerCase state
+    editor.setState(new LowerCase());
+    System.out.println(editor.request("THIRD LINE!"));
+
+
+  }
+
+```
+
+Output :
+
+```
+    First Line!
+    SECOND LINE!
+    third line!
+```
