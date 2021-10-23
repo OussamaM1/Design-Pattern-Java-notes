@@ -24,4 +24,50 @@ We use the Builder pattern when
 
 ## Example
 
-Imagine you are at Hardee's and you order a specific deal, lets say, "Big Hardee" and they hand it over to you without any questions; this is the example of simple factory. But there are cases when the creation logic might involve more steps. For example you want a customized Subway deal, you have several options in how your burger is made e.g what bread do you want? what types of sauces would you like? What cheese would you want? etc. In such cases builder pattern comes to the rescue.
+For example we have a user management module, primary entity is `User`, let’s say. Ideally and practically as well, once a user object is fully created, we will not want to change it’s state , and let’s assume, our User object has following 5 attributes i.e. firstName, lastName, age, phone and address.
+
+In normal practice, if we want to make a immutable User class, then we must pass all five information as parameters to constructor. It will look like this:
+
+```Java
+public User (String firstName, String lastName, int age, String phone, String address){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.phone = phone;
+    this.address = address;
+}
+```
+
+Now what if only firstName and lastName are mandatory and rest 3 fields are optional. Problem !! We need more constructors.
+
+Let’s solve the above problem in code. The given solution uses an additional class UserBuilder which helps us in building desired User instance with all mandatory attributes and combination of optional attributes, without losing the immutability.
+
+Please note that the User object does not have any setter method, so its state can not be changed once it has been built. This provides the desired immutability.
+
+```Java
+public static void main(String[] args) {
+    User user1 = new User.UserBuilder("Lokesh", "Gupta")
+    .age(30)
+    .phone("1234567")
+    .address("Fake address 1234")
+    .build();
+
+    System.out.println(user1);
+
+
+    User user2 = new User.UserBuilder("Super", "Man")
+    //No age
+    //No phone
+    //no address
+    .build();
+
+    System.out.println(user2);
+}
+```
+
+Output :
+
+```
+User: Lokesh,Gupta,30,1234567,Fake address 1234
+User: Super,Man
+```
