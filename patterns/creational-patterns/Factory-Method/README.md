@@ -44,9 +44,16 @@ And then it can be used as :
     DevelopmentManager developmentManager = new DevelopmentManager();
     MarketingManager marketingManager = new MarketingManager();
 
-    developmentManager.takeInterview(); // Output: Asking about design patterns!
-    marketingManager.takeInterview(); // Output: Asking about community building!
+    developmentManager.takeInterview();
+    marketingManager.takeInterview();
 
   }
 
+```
+
+Output :
+
+```
+    Asking about design patterns!
+    Asking about community building!
 ```
