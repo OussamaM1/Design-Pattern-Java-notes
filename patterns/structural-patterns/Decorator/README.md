@@ -32,3 +32,27 @@ For example we have a car mangement system , suppose we want to buy a basicCar b
 <p align="center">
   <img src="../../images/decorator-example.png" width="700" />
 </p>
+
+```Java
+  public static void main(String []args){
+
+    Car basicCar = new BasicCar();
+    System.out.println("Basic car : "+ basicCar.cost());
+
+    basicCar = new AirConditioner(basicCar);
+    System.out.println("Basic Car (with AirConditioner) : "+basicCar.cost());
+
+    basicCar = new SpeedRegulator(basicCar);
+    System.out.println("Basic Car (with AC and speed regulator) : "+basicCar.cost());
+
+  }
+
+```
+
+Output :
+
+```
+    Basic car : 1000.0
+    Basic Car (with AirConditioner) : 1400.0
+    Basic Car (with AC and speed regulator) : 1600.0
+```
