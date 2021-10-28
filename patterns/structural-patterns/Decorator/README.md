@@ -27,4 +27,8 @@ Use Decorator
 
 ## Example
 
-Lets take coffee for example. First of all we have a simple coffee implementing the coffee interface , We want to make the code extensible to allow options to modify it if required. Lets make some add-ons (decorators)
+For example we have a car mangement system , suppose we want to buy a basicCar but with more features like (speed regulator , AC , Navigation system ...)
+
+<p align="center">
+  <img src="../../images/decorator-example.png" width="700" />
+</p>
