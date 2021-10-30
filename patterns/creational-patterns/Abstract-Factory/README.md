@@ -15,3 +15,11 @@ We use the Abstract Factory pattern when :
   their interfaces, not their implementations.
 
 ## General Structure
+
+<p align="center">
+  <img src="../../images/abstract-factory.png" width="700" />
+</p>
+
+## Example
+
+Consider, you are building a house and you need doors. Based on your needs you might get a wooden door from a wooden door shop, iron door from an iron shop or a PVC door from the relevant shop. Plus you might need a guy with different kind of specialities to fit the door, for example a carpenter for wooden door, welder for iron door etc. As you can see there is a dependency between the doors now, wooden door needs carpenter, iron door needs a welder etc.
