@@ -47,7 +47,6 @@ Let's take an example of text editor, it lets you change the state of text that 
     editor.setState(new LowerCase());
     System.out.println(editor.request("THIRD LINE!"));
 
-
   }
 
 ```
