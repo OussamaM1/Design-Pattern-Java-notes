@@ -6,7 +6,7 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
 
 | Scope      | Class                         | Object                                    |
 | ---------- | ----------------------------- | ----------------------------------------- |
-| Behavioral | Interpreter , Template Method | Chain of Responsiblity , [State](./State) |
+| Behavioral | Interpreter , Template Method | Chain of Responsiblity , [State](./State) , Command , Iterator , Mediator , Memento , Observer , Strategy , Visitor|
 
 ## Note :
 
