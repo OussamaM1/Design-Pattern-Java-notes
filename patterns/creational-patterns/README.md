@@ -4,9 +4,9 @@ These patterns provide various object creation mechanisms, which increase flexib
 
 ## Table of contents :
 
-| Scope      | Class                               | Object                                                                                                |
-| ---------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Creational | [Factory Method](./Factory-Method/) | [Abstract Factory](./Abstract-Factory) , [Builder](./Builder/) , Prototype , [Singleton](./Singleton) |
+| Scope      | Class                               | Object                                                                                                               |
+| ---------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Creational | [Factory Method](./Factory-Method/) | [Abstract Factory](./Abstract-Factory) , [Builder](./Builder/) , [Prototype](./Prototype) , [Singleton](./Singleton) |
 
 ## Note :
 
