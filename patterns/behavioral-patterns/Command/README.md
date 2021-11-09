@@ -42,3 +42,44 @@ Use the Command pattern when you want to :
 - Receiver : knows how to perform the operations associated with carrying out a request. Any class may serve as a Receiver.
 
 ## Example
+
+A generic example would be you ordering food at a restaurant. You (i.e. Client) ask the waiter (i.e. Invoker) to bring some food (i.e. Command) and waiter simply forwards the request to Chef (i.e. Receiver) who has the knowledge of what and how to cook. Another example would be you (i.e. Client) switching on (i.e. Command) the television (i.e. Receiver) using a remote control (Invoker).
+
+<p align="center">
+  <img src="../../images/command-example.png" width="700" />
+</p>
+
+- Command : Command
+- ConcreteCommand : TurnOn and TurnOff
+- Invoker : RemoteController
+- Receiver : The Bulb
+
+```Java
+  public static void main(String []args) {
+
+    //Create the instance of bulb
+    Bulb bulb = new Bulb();
+
+    //Creating Concrete commands
+    TurnOn turnOn = new TurnOn(bulb);
+    TurnOff turnOff = new TurnOff(bulb);
+
+    //Create the invoker (Remote controller)
+    RemoteController remote = new RemoteController();
+
+    //Turn On the bulb
+    System.out.println(remote.submit(turnOn));
+
+    //Turn Off the buld
+    System.out.println(remote.submit(turnOff));
+
+  }
+
+```
+
+Output :
+
+```
+    Bulb has been lit
+    Darkness!
+```
