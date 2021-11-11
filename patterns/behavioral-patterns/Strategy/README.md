@@ -39,3 +39,27 @@ Consider the example of sorting, we implemented bubble sort but the data started
 - Strategy : SortStrategy
 - ConcreteStrategy : BubbleStrategySort & QuickSortStrategy
 - Context : Sorter
+
+```Java
+  public static void main(String []args){
+
+    int[] dataset = { 1, 5, 4, 3, 2, 8 };
+
+    //Bubble sort strategy
+    Sorter sorter = new Sorter(new BubbleStrategySort());
+    dataset = sorter.sort(dataset);
+
+    //Quick sort strategy
+    sorter = new Sorter(new QuickSortStrategy());
+    dataset = sorter.sort(dataset);
+
+  }
+
+```
+
+Output :
+
+```
+    Sorting using bubbleSort
+    Sorting using QuickSort
+```
