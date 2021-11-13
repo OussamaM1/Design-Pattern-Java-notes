@@ -32,7 +32,7 @@ The four essential elements of a design patter :
   - [Prototype](./patterns/creational-patterns/Prototype) — Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
   - [Singleton](./patterns/creational-patterns/Singleton) — Ensure a class only has one instance, and provide a global point of access to it.
 - [Structural Pattern](./patterns/structural-patterns/README.md)
-  - Adapter — Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
+  - [Adapter](./patterns/structural-patterns/Adapter)— Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
   - Bridge — Decouple an abstraction from its implementation so that the two can vary independently.
   - Composite — Compose objects into tree structures to represent part-wholehierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
   - [Decorator](./patterns/structural-patterns/Decorator) — Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
