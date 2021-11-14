@@ -24,8 +24,12 @@ This implementation uses the object composition principle: the adapter implement
 - Target : defines the domain-specific interface that Client uses.
 - Client : collaborateswith objects conforming to the Target interface.
 - Adaptee : defines an existing interface that needs adapting.
-- Adapter :adapts the interface of Adaptec to the Target interface
+- Adapter :adapts the interface of Adaptee to the Target interface
 
 ## Example
 
-Consider that you have some pictures in your memory card and you need to transfer them to your computer. In order to transfer them you need some kind of adapter that is compatible with your computer ports so that you can attach memory card to your computer. In this case card reader is an adapter. Another example would be the famous power adapter; a three legged plug can't be connected to a two pronged outlet, it needs to use a power adapter that makes it compatible with the two pronged outlet. Yet another example would be a translator translating words spoken by one person to another
+Consider that we have a video game where we have a `EnemyAttacker` that can fire a weapon , drive forward and assign driver however we want to create an AI `EnemyRobot`, now a enemy robot has no need for a driver also it's not going to drive forward it's going to walk. In this situation we will need to implement an adapter `EnemyRobotAdapter` to adapt the enemyRobot with enemyAttacker.
+
+<p align="center">
+  <img src="../../images/adapter-example.png" width="700" />
+</p>
