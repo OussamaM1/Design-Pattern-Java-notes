@@ -33,3 +33,42 @@ Consider that we have a video game where we have a `EnemyAttacker` that can fire
 <p align="center">
   <img src="../../images/adapter-example.png" width="700" />
 </p>
+
+The code source : [source folder](./src)
+
+```Java
+  public static void main(String []args){
+
+    //The adaptee
+    EnemyRobot fredTheRobot = new EnemyRobot();
+    //The adapter
+    EnemyAttacker robotAdapter = new EnemyRobotAdapter(fredTheRobot);
+
+    System.out.println("The robot --------------------------------");
+    fredTheRobot.reactToHuman("paul");
+    fredTheRobot.walksForward();
+    fredTheRobot.smashWithHands();
+
+
+    System.out.println("\nThe robot with Adapter -------------------");
+    robotAdapter.assignDriver("paul");
+    robotAdapter.driveForward();
+    robotAdapter.fireWeapon();
+
+  }
+
+```
+
+Output :
+
+```
+    The robot --------------------------------
+    Enemy robot causes 7 Damage with its hands
+    Enemy robot walks forward 3 spaces
+    Enemy robot Tramps on paul
+
+    The robot with adapter -------------------
+    Enemy robot causes 5 Damage with its hands
+    Enemy robot walks forward 4 spaces
+    Enemy robot Tramps on paul
+```
