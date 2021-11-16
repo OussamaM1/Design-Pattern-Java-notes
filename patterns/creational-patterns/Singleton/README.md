@@ -31,6 +31,8 @@ There can only be one president of a country at a time. The same president has t
 
 Note : To create a singleton,we have to make the constructor private, disable cloning, disable extension and create a static variable to house the instance.
 
+The code source : [source folder](./src)
+
 ```Java
   public static void main(String []args){
 
