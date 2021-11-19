@@ -42,31 +42,31 @@ For example, you have three payment methods (A, B and C) setup in your account; 
 The code source : [source folder](./src)
 
 ```Java
-  public static void main(String []args) {
+  public static void main(String[] args) throws Exception {
 
-    //Create the instance of bulb
-    Bulb bulb = new Bulb();
+        // Let's prepare a chain like below
+        // bank -> paypal -> bitcoin
+        //
+        // First priority bank
+        // => If bank can't pay then paypal
+        // => If paypal can't pay then bitcoin
+        Bank bank = new Bank(100);
+        Paypal paypal = new Paypal(200);
+        Bitcoin bitcoin = new Bitcoin(300);
 
-    //Creating Concrete commands
-    TurnOn turnOn = new TurnOn(bulb);
-    TurnOff turnOff = new TurnOff(bulb);
+        bank.setNext(paypal);
+        paypal.setNext(bitcoin);
 
-    //Create the invoker (Remote controller)
-    RemoteController remote = new RemoteController();
-
-    //Turn On the bulb
-    System.out.println(remote.submit(turnOn));
-
-    //Turn Off the buld
-    System.out.println(remote.submit(turnOff));
-
-  }
+        // Let's try to pay using the first priority i.e. bank
+        bank.pay(259);
+    }
 
 ```
 
 Output :
 
 ```
-    Bulb has been lit
-    Darkness!
+    Cannot pay 259.0 using Bank Proceeding...
+    Cannot pay 259.0 using Paypal Proceeding...
+    Paid 259.0 using Bitcoin
 ```
