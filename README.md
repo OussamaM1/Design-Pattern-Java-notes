@@ -36,7 +36,7 @@ The four essential elements of a design patter :
   - [Bridge](./patterns/structural-patterns/Bridge) — Decouple an abstraction from its implementation so that the two can vary independently.
   - Composite — Compose objects into tree structures to represent part-wholehierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
   - [Decorator](./patterns/structural-patterns/Decorator) — Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
-  - Facade — Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+  - [Facade](./patterns/structural-patterns/Facade) — Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
   - Flyweight — Use sharing to support large numbers of fine-grained objects
     efficiently.
   - Proxy — Provide a surrogate or placeholder for another object to control access to it.
