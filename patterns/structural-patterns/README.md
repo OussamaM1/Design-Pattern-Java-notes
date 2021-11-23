@@ -4,9 +4,9 @@ Structural patterns explain how to assemble objects and classes into larger stru
 
 ## Table of contents :
 
-| Scope      | Class                  | Object                                                                                                                    |
-| ---------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Structural | [Adapter](./Adapter) , | [Adapter](./Adapter) , [Bridge](./Bridge) , [Decorator](./Decorator) , Composite , [Facade](./Facade) , Flyweight , Proxy |
+| Scope      | Class                  | Object                                                                                                                                              |
+| ---------- | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Structural | [Adapter](./Adapter) , | [Adapter](./Adapter) , [Bridge](./Bridge) , [Decorator](./Decorator) , Composite , [Facade](./Facade) , [Flyweight](./Flyweight) , [Proxy](./Proxy) |
 
 ## Note :
 
