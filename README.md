@@ -34,12 +34,12 @@ The four essential elements of a design patter :
 - [Structural Pattern](./patterns/structural-patterns/README.md)
   - [Adapter](./patterns/structural-patterns/Adapter) — Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
   - [Bridge](./patterns/structural-patterns/Bridge) — Decouple an abstraction from its implementation so that the two can vary independently.
-  - Composite — Compose objects into tree structures to represent part-wholehierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+  - [Composite](./patterns/structural-patterns/Composite) — Compose objects into tree structures to represent part-wholehierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
   - [Decorator](./patterns/structural-patterns/Decorator) — Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
   - [Facade](./patterns/structural-patterns/Facade) — Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
-  - Flyweight — Use sharing to support large numbers of fine-grained objects
+  - [Flyweight](./patterns/structural-patterns/Flyweight) — Use sharing to support large numbers of fine-grained objects
     efficiently.
-  - Proxy — Provide a surrogate or placeholder for another object to control access to it.
+  - [Proxy](./patterns/structural-patterns/Proxy) — Provide a surrogate or placeholder for another object to control access to it.
 - [Behavioral Pattern](./patterns/behavioral-patterns/README.md)
   - [Chain of Responsibility](./patterns/behavioral-patterns/Chain-of-Responsibility) — Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
   - [Command](./patterns/behavioral-patterns/Command) — Encapsulate a request as an object, thereby letting you parameterized clients with different requests, queue or log requests, and support undoable operations.
