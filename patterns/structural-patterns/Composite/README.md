@@ -51,11 +51,21 @@ The code source : [source folder](./src)
 ```Java
   public static void main(String []args){
 
-    President presidentOne = President.getInstance();
-    President presidentTwo = President.getInstance();
+        Employee developerOne = new Developer(100, "Developer one", "Back-end");
+        Employee developerTwo = new Developer(101, "Developer two", "FullStack");
+        Employee designerUI = new Designer(201, "Designer one", "UI designer");
+        Organization organization = new Organization();
+        organization.addEmployee(developerOne);
+        organization.addEmployee(developerTwo);
+        organization.addEmployee(designerUI);
 
-    System.out.println("PresidentOne hashCode:- "+ presidentOne.hashCode());
-    System.out.println("PresidentTwo hashCode:- "+ PresidentTwo.hashCode());
+        organization.showEmployeeDetails();
+
+        // delete developer Two
+        System.out.println("----------------------");
+        organization.removeEmployee(developerTwo);
+
+        organization.showEmployeeDetails();
 
   }
 
@@ -64,6 +74,10 @@ The code source : [source folder](./src)
 Output :
 
 ```
-    PresidentOne hashCode:- 1550089733
-    PresidentTwo hashCode:- 1550089733
+    100- Developer one Back-end
+    101- Developer two FullStack
+    201- Designer one UI designer
+    ----------------------
+    100- Developer one Back-end
+    201- Designer one UI designer
 ```
