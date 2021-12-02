@@ -33,3 +33,35 @@ Use the Observer pattern in any of the following situations:
     with the subject's.
 
 ## Example
+
+For example, a news agency can notify channels when it receives news. Receiving news is what changes the state of the news agency, and it causes the channels to be notified.
+
+<p align="center">
+  <img src="../../images/observer-example.png" width="700" />
+</p>
+
+- Subject : Agency
+- Observer : Channel
+- ConcreteSubject : NewsAgency
+- ConcreteObserver ; NewsChannel
+
+The code source : [source folder](./src)
+
+```Java
+      public static void main(String[] args) {
+        NewsAgency observable = new NewsAgency();
+        NewsChannel observer = new NewsChannel();
+
+        observable.addObserver(observer);
+        observable.setNews("Today's news !");
+
+        System.out.println(observer.getNews());
+    }
+
+```
+
+Output :
+
+```
+    Today's news !
+```
