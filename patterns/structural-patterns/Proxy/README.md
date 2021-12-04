@@ -19,7 +19,7 @@ in which the Proxy pattern is applicable:
 </p>
 
 - Proxy :
-  - maintains a reference that letsthe proxy access the real subject. Proxymay
+  - maintains a reference that lets the proxy access the real subject. Proxy may
     refer to a Subject if the RealSubject and Subjectinterfaces are the same.
   - provides an interface identical to Subject's so that a proxy can by substituted for the real subject.
   - controls access to the real subject and may be responsible for creating and
