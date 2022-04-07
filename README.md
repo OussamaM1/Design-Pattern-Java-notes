@@ -25,7 +25,7 @@ The four essential elements of a design patter :
 
 ## The 23 patterns from the book
 
-- [Creation Pattern](./patterns/creational-patterns/README.md)
+- [Creational Pattern](./patterns/creational-patterns/README.md)
   - [Abstract Factory](./patterns/creational-patterns/Abstract-Factory) — Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
   - [Builder](./patterns/creational-patterns/Builder) — Separate the construction of a complex object from its representation so that the same construction process can create different representations.
   - [Factory Method](./patterns/creational-patterns/Factory-Method) — Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
