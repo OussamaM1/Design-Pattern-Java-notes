@@ -57,8 +57,9 @@ The four essential elements of a design patter :
 
 Design Patterns: Elements of Reusable Object-Oriented Software - by (GOF)
 
-Design Patterns : https://cs.lmu.edu/~ray/notes/designpatterns/
+Design Patterns: https://cs.lmu.edu/~ray/notes/designpatterns/
 
 Refactoring guru: https://refactoring.guru/design-patterns
 
-Examples from : https://roadmap.sh/guides/design-patterns-for-humans
+Examples from: https://roadmap.sh/guides/design-patterns-for-humans
+
