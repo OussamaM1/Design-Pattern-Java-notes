@@ -1,4 +1,4 @@
-﻿# Behavioral patterns
+﻿# 🎭 Behavioral patterns
 
 Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
 
@@ -11,4 +11,5 @@ Behavioral design patterns are concerned with algorithms and the assignment of r
 ## Note :
 
 [Some further explanation about scope](../creational-patterns/README.md#note-)
+
 
