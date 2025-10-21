@@ -1,4 +1,4 @@
-﻿# Creational patterns
+﻿# ✨ Creational patterns
 
 These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
@@ -6,7 +6,7 @@ These patterns provide various object creation mechanisms, which increase flexib
 
 | Scope      | Class                               | Object                                                                                                               |
 | ---------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Creational | [Factory Method](./Factory-Method/) | [Abstract Factory](./Abstract-Factory), [Builder](./Builder/), [Prototype](./Prototype), [Singleton](./Singleton) |
+| Creational | - [Factory Method](./Factory-Method/) | - [Abstract Factory](./Abstract-Factory)<br> - [Builder](./Builder/)<br> - [Prototype](./Prototype)<br> - [Singleton](./Singleton) |
 
 ## Note :
 
@@ -44,4 +44,5 @@ class Car extends Automobile { // Car is an automobile => Car class extends Auto
 }
 
 ```
+
 
